@@ -43,7 +43,9 @@ public class UserAccount {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UserAccount that = (UserAccount) o;
-        return Objects.equals(accountNumber, that.accountNumber) && Objects.equals(agency, that.agency) && Objects.equals(userName, that.userName);
+        return Objects.equals(accountNumber, that.accountNumber)
+                && Objects.equals(agency, that.agency)
+                && Objects.equals(userName, that.userName);
     }
 
     @Override
