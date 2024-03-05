@@ -53,11 +53,9 @@ public class UserAccount {
 
     @Override
     public String toString() {
-        return "UserAccount{" +
-                "accountNumber=" + accountNumber +
-                ", agency='" + agency + '\'' +
-                ", userName='" + userName + '\'' +
-                ", balance=" + balance +
-                '}';
+        return ("accountNumber= " + accountNumber + "\n")
+                .concat("agency = " + agency + "\n")
+                .concat("userName = " + userName + "\n")
+                .concat("balance = " + balance);
     }
 }
